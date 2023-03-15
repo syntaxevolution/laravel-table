@@ -3,6 +3,6 @@
    @class([...$class, 'p-1'])
    href=""
    title="{{ $title }}"
-   data-bs-toggle="tooltip">
+   data-toggle="tooltip">
     {!! $icon !!}
 </a>
