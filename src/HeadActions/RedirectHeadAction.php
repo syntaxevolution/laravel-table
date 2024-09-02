@@ -11,7 +11,7 @@ class RedirectHeadAction extends AbstractHeadAction
         public string $url,
         public string $label,
         public string $icon,
-        public array $class = null,
+        public array $class = 'btn btn-success',
         public bool $openInNewWindow = false,
     ) {
         //
