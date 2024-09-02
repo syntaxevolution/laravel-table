@@ -35,7 +35,7 @@ class RedirectHeadAction extends AbstractHeadAction
     public function action(Component $livewire): void
     {
         $this->openInNewWindow
-            ? redirect()->to($this->url)
+            ? $livewire->dispatch('laraveltable:link:open:newtab', $this->url)
             : redirect()->to($this->url);
     }
 }
